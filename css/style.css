@@ -1,0 +1,691 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.title_col {
+    background: none;
+    color: rgb(46, 122, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0.9;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    min-width: 36rem;
+}
+
+.title {
+    background: white;
+    color: rgb(46, 122, 27);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.navigation_button_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.navigation_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+#inv_fixed_div{
+    visibility: hidden;
+    height: 1px;
+}
+#header-title {
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    flex: 10;
+    margin-left: 1.5rem;
+}
+#logo_image {
+    width: 5rem;
+    height: 4rem;
+    flex: 1;
+}
+#log_unlog_button_panel {
+    width: max-content;
+    flex: 4;
+}
+#log_unlog_button {
+    float: right;
+    height: 3.5rem;
+    margin-right: 1rem;
+    width: 50%;
+    color: rgb(46, 122, 27);
+    background: white;
+    border-style: none;
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#login_under_header  {
+    align-items: center;
+    margin: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    min-width: 95%;
+    margin-top: 4rem;
+}
+#students_marks_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+
+#student_marks_table {
+    width: 100%;
+}
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+#login_panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 30%;
+    max-width: 30%;
+    margin-top: 7%;
+    background-color: white;
+    padding: 1.5%;
+    border-radius: 30px 30px 30px 30px;
+    border: 2px solid grey;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.login_enter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_header_lable {
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8rem;
+}
+.login_lables {
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+#login_input, #password_input {
+    height: 2rem;
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid black;
+}
+.hr_login {
+    margin-bottom: 1.1rem;
+    margin-top: 1.9rem;
+    height: 0.1rem;
+    background-color: black;
+}
+#login_button {
+    width: 80%;
+    height:3rem;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+    color: lavenderblush;
+    background-color: rgb(212, 122, 19);
+    border: 3px solid rgb(161, 92, 2);
+    cursor: pointer;
+}
+
+#students_marks_table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: min-content;
+    margin-top: 6rem;
+    background-color: white;
+    padding: 1.5%;
+    border-radius: 30px 30px 30px 30px;
+    border: 2px solid grey;
+    background-color: rgba(255, 255, 255, 1);
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-bottom: 1.2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.input_marks_row {
+    min-width: min-content;
+}
+
+.dairy_table {
+    border: 2px solid black;
+    width: min-content;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+.dairy_table_head {
+    border: 2px solid black;
+    width: min-content;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: darkorange;
+}
+.dairy_table_lab {
+    border: 2px solid black;
+    width: min-content;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: lightseagreen;
+}
+.dairy_table_sum {
+    border: 2px solid black;
+    width: min-content;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: rgb(46, 122, 27);
+}
+.dairy_table_not_sum {
+    border: 2px solid black;
+    width: min-content;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: red;
+}
+#find_group {
+margin-top: 7rem;
+margin-left: 3rem;
+background-color: white;
+max-width: 30rem;
+border-radius: 10px 10px 10px 10px;
+border: 2px solid grey;
+min-width: 14rem;
+
+}
+#find_group_body {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.prof_text {
+    font-size: 14;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.prof_select {
+    font-size: 14;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    height: 2rem;
+}
+#find_button, #into_DB_button {
+    width: 6rem;
+    height:2rem;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: lavenderblush;
+    background-color: rgb(212, 122, 19);
+    border: 2px solid rgb(161, 92, 2);
+    cursor: pointer;
+}
+#users_id_inv, #students_id_inv, .inv_in_out {
+    height: 0px;
+    display: none;
+    width: 0px;
+    visibility: hidden;
+}
+#professors_marks_section {
+    margin: 3rem;
+    margin-top: 0.5rem;
+    background-color: white;
+    width: min-content;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid grey;
+}
+#professors_marks_table {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: min-content;
+}
+#input_marks_section {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+#student_name {
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+}
+.student_mark {
+    height: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    max-width: 4rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;border: 2px solid grey;
+
+}
+.student_mark_allready{
+    height: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    max-width: 4rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: yellowgreen;
+    border: 2px solid grey;
+}
+
+.navigation_button {
+    width: 100%;
+    height: 3rem;
+    border-style: hidden;
+    color: rgb(46, 122, 27);
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    background-color: gold;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-top: 2px solid gray;
+}
+
+
+#slider_beckground {
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 60%;
+    display: flex;
+    justify-self: center;
+    padding: 0.1rem;
+    margin-top: 7.3rem;
+    margin-left: 20%;
+    margin-bottom: -110px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.slider {
+    position: relative;
+    max-width: 40rem;
+    margin: 40px auto;
+
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+  }
+  
+  .slider input[name="switch"] {
+    display: none;
+  }
+  
+  .switch {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .switch label {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    margin: 0 3px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    border: 5px solid #2f363c;
+    background-color: #738290;
+  }
+  
+  #btn1:checked~.switch label[for="btn1"] {
+    background-color: white;
+  }
+  
+  #btn2:checked~.switch label[for="btn2"] {
+    background-color: white;
+  }
+  
+  #btn3:checked~.switch label[for="btn3"] {
+    background-color: white;
+  }
+  #btn4:checked~.switch label[for="btn4"] {
+    background-color: white;
+  }
+  
+  .slider-inner {
+    overflow: hidden;
+    
+  }
+
+  .slides {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  
+  .slides img {
+    width: 100%;
+    flex-shrink:0;
+  }
+  
+  #btn1:checked~slider-inner slides {
+    transform: translate(0);
+  }
+  
+  #btn2:checked~.slider-inner .slides {
+    transform: translateX(-100%);
+  }
+  
+  #btn3:checked~.slider-inner .slides {
+    transform: translateX(-200%);
+  }
+  #btn4:checked~.slider-inner .slides {
+    transform: translateX(-300%);
+  }
+
+#news_blog{
+    margin-top: 8rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+    width: 90%;
+    min-width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 10px 10px 10px 10px;
+
+}
+.article {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: 4px solid rgba(48, 172, 64, 0.685);
+
+}
+
+.article_head{
+    margin: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.article_data {
+    margin-left: 25px;
+    margin-bottom:  25px;
+    display: flex;
+    flex-direction: row;
+
+}
+.article_photo {
+    width: 30%;
+    margin-right: 1rem;
+
+}
+.article_text {
+    max-width: 70%;
+    margin-right: 5px;
+}
+.article_text_text{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.article_image {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.article_date {
+    display: flex;
+    align-self: flex-end;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+#latest_news_line{
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+#professors {
+    margin: 1rem;
+    margin-top: 7.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 4px solid rgba(18, 150, 35, 0.685);
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    min-width: min-content;
+    min-height: min-content;
+}
+.hr_prof {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    height: 0.1rem;
+    background-color:rgba(18, 150, 35, 0.685);
+}
+#subjects_buttons {
+    margin-left: 2%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub_button {
+    height: 3rem;
+    width: max-content;
+    margin-right: 15px;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.sub_form{
+    margin-top: 15px;
+}
+.prof_photo {
+    max-width: 180px;
+    max-height: 240px;
+    min-width: 180px;
+    min-height: 240px;
+    margin-right: 5px;
+    
+}
+
+.prof_row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: space-between;
+}
+.prof_place {
+    display: flex;
+    flex-direction: row;
+    max-width: 48%;
+    align-items: stretch;
+    border: 4px solid rgba(18, 150, 35, 0.685);
+}
+.prof_ref {
+    margin-bottom: 10px;
+}
+#select_option, .admin {
+    margin: 5%;
+    margin-top: 7.5rem;
+    margin-bottom: 0;
+    border: 3px solid rgba(18, 150, 35, 0.685);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    min-width: min-content;
+    max-width: min-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.button_selector, #send {
+    margin-right: 12px;
+    height: 3rem;
+    width: 8.5rem;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px 10px 10px 10px;
+    border: 3px solid rgba(18, 150, 35, 0.685);
+    background-color: gold;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+#admin_table{
+    margin-top: 2rem;
+}
+#lab_row {
+    display: flex;
+    flex-direction: row;
+}
+#prof_sub_name {
+    margin: 0.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#student_lab_num {
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 6rem;
+    margin-right: 0.203rem;
+}
+#student_name_in_tab{
+    font-size: 1rem;
+    margin-right: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media(max-width:950px) {
+    .prof_place {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:780px) {
+    .article_text_text {
+        font-size: 16px;
+    }
+    .article_head {
+        font-size: 18px;
+    }
+    #login_panel {
+        margin-top: 12%;
+        min-width: 14rem;
+    }
+    .login_header_lable {
+        font-size: 1.4rem;
+    }
+    .login_lables {
+        font-size: 0.9rem;
+    }
+    #login_input {
+        font-size: 1rem;
+        height: 1.4rem;
+    }
+    #password_input {
+        font-size: 1rem;
+        height: 1.4rem;
+    }
+    #login_button {
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .hr_login {
+        margin-top: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    .dairy_table_head {
+        font-size: 14px;
+    }
+    .dairy_table_lab {
+        font-size: 14px;
+    }
+    .dairy_table {
+        font-size: 14px;
+    }
+    .dairy_table_not_sum {
+        font-size: 14px;
+    }
+    .dairy_table_sum {
+        font-size: 14px;
+    }
+    .student_mark_allready {
+        max-width: 3rem;
+    }
+    .student_mark {
+        max-width: 3rem;
+    }
+    #student_name {
+        font-size: 0.8rem;
+        margin-right: 1rem;
+    }
+}
+@media(max-width:650px) {
+    .article_text_text {
+        font-size: 12px;
+    }
+    .dairy_table_head {
+        font-size: 12px;
+    }
+    .dairy_table_lab {
+        font-size: 12px;
+    }
+    .dairy_table {
+        font-size: 12px;
+    }
+    .dairy_table_not_sum {
+        font-size: 12px;
+    }
+    .dairy_table_sum {
+        font-size: 12px;
+    }
+}
